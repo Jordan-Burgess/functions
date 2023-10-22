@@ -44,16 +44,6 @@ function isOnetoNPandigital(num){
 console.log(isOnetoNPandigital(312))   // 1, 12, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789
 
 
-function printLongestWord(arr){
-    let longestWord = ''
-    for(let i=0; i<arr.length; i++){
-        if(arr[i].length > longestWord.length){
-            longestWord = arr[i]
-        }
-    }
-    return longestWord
-}
-
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 
@@ -104,4 +94,14 @@ for(let i=0; i<s.length; i++){
         return false
     }
     i++
+}
+
+function printLongestWord(arr){
+    let longestWord = ''
+    for(let i=0; i<arr.length; i++){
+        if(arr[i].length > longestWord.length){
+            longestWord = arr[i]
+        }
+    }
+    return longestWord
 }
